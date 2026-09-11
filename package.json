@@ -1,0 +1,31 @@
+{
+  "name": "khurana-tally-middleware",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Node.js middleware between Khurana Kitchenware's website and TallyPrime",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test:tally": "node src/scripts/test-connection.js",
+    "test:stock": "node src/scripts/test-stock-items.js",
+    "test:stock:detailed": "node src/scripts/test-stock-items-detailed.js",
+    "test:create-ledger": "node src/scripts/test-create-ledger.js",
+    "test:create-stock-item": "node src/scripts/test-create-stock-item.js",
+    "test:create-stock-group": "node src/scripts/test-create-stock-group.js",
+    "test:create-sales-invoice": "node src/scripts/test-create-sales-invoice.js",
+    "test:alter-gst-only": "node src/scripts/test-alter-gst-only.js",
+    "test:create-purchase-voucher": "node src/scripts/test-create-purchase-voucher.js",
+    "test:create-payment": "node src/scripts/test-create-payment.js",
+    "test:create-credit-note": "node src/scripts/test-create-credit-note.js",
+    "test:fetch-voucher-status": "node src/scripts/test-fetch-voucher-status.js",
+    "test:create-ledger-group": "node src/scripts/test-create-ledger-group.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fast-xml-parser": "^4.4.1",
+    "multer": "^1.4.5-lts.1",
+    "xlsx": "^0.18.5"
+  }
+}
